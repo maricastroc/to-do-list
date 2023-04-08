@@ -5,6 +5,7 @@
 <p>This is a simple To-Do List with CRUD operations, made with ReactJS.</p>
 
 <p>In this project, I had the opportunity to practice working with ReactJS, using concepts like states, lists, immutability, properties, components and keys.</p>
+<p>Also, I was able to work with TypeScript, allowing a better organization project's files and preventing bugs.</p>
 
 <br/>
 <h2>:mag: Links</h2>
@@ -14,5 +15,5 @@
 <h3>Built with:</h3>
 <li>HTML</li>
 <li>CSS</li>
-<li>Typescript</li>
+<li>TypeScript</li>
 <li>ReactJS</li>
