@@ -1,0 +1,108 @@
+.task {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 0;
+}
+
+.hiddenTask {
+  display: none;
+  margin: 1rem 0;
+}
+
+.hiddenEditBar {
+    display: none;
+}
+
+.editBar {
+    display: flex;
+    gap: 0.5rem;
+    justify-content: space-between;
+    margin-bottom: 0;
+}
+
+.taskArea {
+    width: 46rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    pointer-events: initial;
+    background-color: var(--gray-500);
+    border-radius: 12px;
+    padding: 1rem;
+    border: var(--gray-400) solid 1px;
+}
+
+.task + .task {
+    margin-top: 0.75rem;
+}
+
+.taskArea button {
+    width: 1.2rem;
+    height: 1.2rem;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.taskArea button:focus {
+    box-shadow: none;
+    outline: transparent;
+}
+
+.taskArea button svg {
+    margin-top: 0.1rem;
+}
+
+.disabledButton {
+    border: var(--blue) solid 2px;
+    background-color: transparent;
+    color: transparent;
+}
+
+.activeButton {
+    border: var(--purple-dark) solid 2px;
+    background-color: var(--purple-dark);
+    color: var(--gray-100);
+}
+
+.buttonAndTextArea {
+    display: flex;
+    gap: 1rem;
+}
+
+.content {
+    text-align: start;
+    font-size: 0.875rem;
+    color: var(--gray-100);
+}
+
+.contentMarked {
+    color: var(--gray-300);
+    text-decoration: line-through;
+}
+
+.icons {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.deleteIcon,
+.editIcon {
+    color: var(--gray-300);
+    cursor: pointer;
+    transition: color 300ms;
+}
+
+.deleteIcon:hover {
+    color: var(--danger);
+}
+
+.editIcon:hover {
+    color: var(--blue);
+}
+
+@media (max-width: 768px) {
+    .taskArea {
+        width: clamp(18rem, 85vw, 32rem);
+    }
+}
+

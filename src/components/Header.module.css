@@ -1,0 +1,26 @@
+.header {
+    background-color: var(--gray-700);
+    padding: 4.5rem 0;
+    display: flex;
+}
+
+.header .logo {
+    display: flex;
+    gap: 0.75rem;
+    margin: 0 auto;
+}
+
+.logo strong {
+    font-size: 2.5rem;
+    font-weight: 900;
+    color: var(--blue);
+}
+
+.logo span {
+    color: var(--purple-dark);
+}
+
+.class p {
+    font-size: 50px;
+    color: var(--blue);
+}

@@ -1,0 +1,61 @@
+.hiddenEditBar {
+    display: none;
+}
+
+.editBar {
+    pointer-events: initial;
+    cursor: pointer;
+    width: 100%;
+    display: flex;
+    gap: 0.5rem;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+
+.editBar input {
+    width: 100%;
+    text-align: left;
+    font-size: 1rem;
+    background-color: var(--gray-500);
+    color: var(--gray-100);
+    border-radius: 12px;
+    padding: 1rem;
+    border: var(--gray-700) solid 2px;
+}
+
+.editBar button {
+    cursor: pointer;
+    display: flex;
+    gap: 0.25rem;
+    align-items: center;
+    font-size: 0.875rem;
+    font-weight: bold;
+    background-color: transparent;
+    padding: 1rem 0.7rem;
+    color: var(--blue-dark);
+    border-radius: 12px;
+    border: var(--blue-dark) solid 2px;
+    transition: color background-color 200ms;
+}
+
+.editBar button:hover {
+    color: var(--gray-100);
+    background-color: var(--blue);
+}
+
+.editBar button:focus {
+    box-shadow: none;
+    outline: transparent;
+}
+
+@media (max-width: 425px) {
+    .editBar {
+        flex-direction: column;
+        align-items: center;
+        gap: 0.8rem;
+    }
+
+    .editBar button {
+        padding: 0.7rem;
+    }
+}
