@@ -30,7 +30,7 @@ The most challenging aspect of the project was manipulating the array of items i
 > Clone the repository:
 
 ```bash
-git clone https://github.com/maricastroc/github-blog
+git clone https://github.com/maricastroc/to-do-list
 ```
 
 > Install the dependencies:
